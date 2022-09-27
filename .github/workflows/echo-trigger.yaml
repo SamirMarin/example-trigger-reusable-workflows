@@ -1,0 +1,12 @@
+Name: '.NET Build Publish NuGet Example Github Package'
+
+on:
+  push:
+    tags:
+      - '*v*.*.*'
+    branches:
+      - example-reusable-trigger
+
+jobs:
+  echo-run:
+    uses: SamirMarin/example-reusable-workflow/.github/workflows/reusable-workflow-echo-repo.yaml@workflow-echo-repo-v0.1.0
