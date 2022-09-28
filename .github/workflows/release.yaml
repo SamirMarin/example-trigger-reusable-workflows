@@ -1,0 +1,20 @@
+name: release packages
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - "packages/*"
+
+  pull_request:
+    paths:
+      - "packages/*"
+    branches:
+      - main
+
+jobs:
+  release:
+    uses: SamirMarin/example-reusable-workflows/.github/workflows/reusable-release-packages.yaml@test-branch
+    with:
+      packages: "Test.Class New.Run"

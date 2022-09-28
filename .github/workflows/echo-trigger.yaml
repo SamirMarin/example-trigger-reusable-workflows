@@ -5,7 +5,7 @@ on:
     tags:
       - '*v*.*.*'
     branches:
-      - example-reusable-trigger
+      - main
 
 jobs:
   echo-run:
