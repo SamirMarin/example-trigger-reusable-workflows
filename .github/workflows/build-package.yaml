@@ -16,7 +16,5 @@ jobs:
   test-release:
     uses: SamirMarin/example-reusable-workflows/.github/workflows/reusable-release-packages.yaml@test-branch
     with:
-      packages: |
-        "Test.Class"
-        "Hold"
+      packages: "Test.Class New.Run"
 
