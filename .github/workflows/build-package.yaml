@@ -18,4 +18,5 @@ jobs:
     with:
       packages: |
         "Test.Class"
+        "Hold"
 
