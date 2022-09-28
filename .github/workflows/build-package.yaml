@@ -1,0 +1,14 @@
+name: build
+
+on:
+  push:
+    tags:
+      - '*v*.*.*'
+    branches:
+      - example-reusable-trigger
+
+jobs:
+  echo-run:
+    uses: SamirMarin/example-reusable-workflows/.github/workflows/reusable-github-package.yml@test-branch
+    with:
+      working_dir: ./packages/Test.Class
