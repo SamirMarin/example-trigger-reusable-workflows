@@ -9,4 +9,4 @@ jobs:
   build:
     uses: SamirMarin/example-reusable-workflows/.github/workflows/reusable-github-package.yaml@test-branch
     with:
-      working_dir: ./packages
+      projects_dir: ./packages
