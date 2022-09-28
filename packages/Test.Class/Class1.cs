@@ -1,5 +1,5 @@
 // Hello World! program
-//test
+//test2
 namespace Test.Class
 {
     class Class1 {         
