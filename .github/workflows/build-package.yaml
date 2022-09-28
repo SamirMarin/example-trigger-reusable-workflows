@@ -1,4 +1,4 @@
-name: build
+name: build packages
 
 on:
   push:
@@ -8,7 +8,14 @@ on:
       - example-reusable-trigger
 
 jobs:
-  echo-run:
+  build:
     uses: SamirMarin/example-reusable-workflows/.github/workflows/reusable-github-package.yml@test-branch
     with:
       working_dir: ./packages/Test.Class
+
+  test-release:
+    uses: SamirMarin/example-reusable-workflows/.github/workflows/reusable-release-packages.yaml@test-branch
+    with:
+      packages: |
+        Test.Class
+
