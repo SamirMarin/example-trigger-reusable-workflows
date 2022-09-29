@@ -15,6 +15,7 @@ on:
 
 jobs:
   release:
-    uses: SamirMarin/example-reusable-workflows/.github/workflows/reusable-release-packages.yaml@test-branch
+    uses: SamirMarin/example-reusable-workflows/.github/workflows/reusable-release-github-packages.yaml@switch-pump-and-release
     with:
       packages: "Test.Class New.Run"
+      projects_dir: ./packages
