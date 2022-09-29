@@ -1,5 +1,5 @@
 // Hello Universe! program
-// Hello! Hello World! Hello
+// Hello! Hello World! Hello howdy
 namespace New.Run
 
 {
