@@ -1,0 +1,10 @@
+apiVersion: infrastructure.1047games.com/v1alpha1
+kind: GitOpsConfig
+spec:
+  configRepo:
+    owner: SamirMarin
+    repo: example-reusable-workflows
+  deployments:
+    - sourceBranch: gitops
+      targetStack: dev
+      autoDeploy: false
