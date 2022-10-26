@@ -7,4 +7,4 @@ spec:
   deployments:
     - sourceBranch: gitops
       targetStack: dev
-      autoDeploy: false
+      autoDeploy: true
