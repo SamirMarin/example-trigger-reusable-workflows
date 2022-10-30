@@ -19,11 +19,11 @@ jobs:
 
       - name: Echo test
         run: |
-          echo ${{ github.event.pull_request.labels }}
-          for label in ${{ github.event.pull_request.labels }}; do
-            echo "current label"
-            echo $label
-          done
+          echo ${{ github.event.pull_request.labels.*.name }}
+          #for label in ${{ github.event.pull_request.labels }}; do
+          #  echo "current label"
+          #  echo $label
+          #done
 
           echo test
 
