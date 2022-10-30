@@ -22,6 +22,10 @@ jobs:
           echo ${{ github.event.pull_request.labels }}
           for package in ${{ github.event.pull_request.labels }}; do
             echo "current label"
-            echo $label.name
+            echo $label
           done
+
+          echo test
+
+          echo ${{ github.event.pull_request.labels }} | jq '.[].name'
 
