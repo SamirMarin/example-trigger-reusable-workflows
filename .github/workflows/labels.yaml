@@ -19,7 +19,7 @@ jobs:
 
       - name: Echo test
         run: |
-          echo ${{ github.event.pull_request.labels.*.name == 'documentation'}}
+          echo ${{ contains(github.event.pull_request.labels.*.name, 'documentation') }}
           #for label in ${{ github.event.pull_request.labels }}; do
           #  echo "current label"
           #  echo $label
