@@ -25,7 +25,4 @@ jobs:
           #  echo $label
           #done
 
-          echo test
-
-          echo ${{ github.event.pull_request.labels }} | jq '.[].name'
 
